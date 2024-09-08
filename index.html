@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The caracther | Books</title>
+
+    <link rel="stylesheet" href="./src/styles/desktop.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header-section">
+        <div class="logo-box">
+            <img src="./src/images/Logo.jpg" alt="">
+            <h1>The caracther | Livros originais.</h1>
+        </div>
+
+        <nav class="navigation">
+            <li><a href="#">Apoie-nos</a></li> <!--Editar link-->
+            <li><a href="#">Dúvidas</a></li> <!--Editar link-->
+            <li><a href="#">Redes sociais</a></li> <!--Editar link-->
+        </nav>
+    </header>
+
+    <main class="main-section">
+        <section class="search-section">
+            <div class="search-box">
+                <fieldset>
+                    <label for="search-input">Digite aqui o livro que você deseja:</label>
+                    <input type="text" name="" id="search-input" placeholder="nome do livro aqui!">
+                    <button type="button" id="search-submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </fieldset>
+            </div>
+        </section>
+
+        <section class="slide-section">
+            <h2 class="slide-title">Confira 6 de nossos melhores livros!</h2>
+            <div class="slide-box">
+                <button id="left-arrow"><i class="fa-solid fa-arrow-left"></i></button>
+                <div class="slide-imgs">
+                    <img src="https://media.slidesgo.com/storage/11258370/upload.png" alt="" class="slide-element">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0sbcINpv4FVmG2M2dZeKpeghxidNswXeDTQ&s" alt=""
+                    class="slide-element">
+                    <img src="https://media.slidesgo.com/storage/11258370/upload.png" alt="" class="slide-element">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0sbcINpv4FVmG2M2dZeKpeghxidNswXeDTQ&s" alt=""
+                    class="slide-element">
+                    <img src="https://media.slidesgo.com/storage/11258370/upload.png" alt="" class="slide-element">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0sbcINpv4FVmG2M2dZeKpeghxidNswXeDTQ&s" alt=""
+                    class="slide-element">
+                </div>
+                <button id="right-arrow"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </section>
+
+        <section class="library-section">
+            <div class="library-box"></div>
+        </section>
+    </main>
+
+    <footer class="footer-section">
+        <div>
+            <span>Gustavo da Silva Santos | 2024. &copy;</span>
+        </div>
+    </footer>
+
+    <script src="./src/javascript/script.js"></script>
+</body>
+</html>
