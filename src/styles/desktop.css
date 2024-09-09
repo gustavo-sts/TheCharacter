@@ -74,6 +74,7 @@
 
 .main-section{
     background-color: rgb(0, 229, 255);
+    
     height: fit-content;
 
     display: flex;
@@ -112,8 +113,15 @@
 }
 
 #search-input{
-    border-radius: 10px;
-    text-indent: 10px;
+    border-radius: 5px;
+    text-indent: 5px;
+    width: 200px;
+    height: 30px;
+}
+
+#search-input::placeholder{
+    color: black;
+    font-size: 15px;
 }
 
 #search-submit{
@@ -136,13 +144,20 @@
 
 .slide-title{
     font-family: "roboto";
+    background-color: #fff;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .slide-box{
     width: 1100px; /*cada imagem deve ter 300px*/
+    background-color: #ffffff;
+    border-radius: 10px;
     padding: 10px;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
@@ -151,6 +166,7 @@
     border: none;
     font-size: 30px;
     cursor: pointer;
+    border: 1px solid black;
 }
 
 #right-arrow{
@@ -158,6 +174,7 @@
     border: none;
     font-size: 30px;
     cursor: pointer;
+    border: 1px solid black;
 }
 
 .slide-imgs{
@@ -171,6 +188,7 @@
 
 .slide-element{
     border-radius: 20px;
+    border: 1px solid black;
     width: 300px;
 
     cursor:grabbing;
@@ -188,7 +206,9 @@
 .library-box{
     width: 94%;
     height: 700px;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.282);
+    backdrop-filter: opacity(20%);
+    backdrop-filter: blur(10px);
     border-radius: 20px;
 }
 

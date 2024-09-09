@@ -12,7 +12,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header class="header-section">
+    <header class="header-section" onscroll="stickPosition()">
         <div class="logo-box">
             <img src="./src/images/Logo.jpg" alt="">
             <h1>The caracther | Livros originais.</h1>
@@ -30,7 +30,7 @@
             <div class="search-box">
                 <fieldset>
                     <label for="search-input">Digite aqui o livro que você deseja:</label>
-                    <input type="text" name="" id="search-input" placeholder="nome do livro aqui!">
+                    <input type="text" name="" id="search-input" placeholder="&rightarrow; nome do livro aqui!">
                     <button type="button" id="search-submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </fieldset>
             </div>
