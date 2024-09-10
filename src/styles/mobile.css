@@ -28,7 +28,7 @@
 }
 
 .logo-box > h1{
-    font-size: 30px;
+    font-size: 15px;
     font-family: "Roboto";
     color: #fff;
 
@@ -38,7 +38,7 @@
 }
 
 .logo-box > img{
-    width: 60px;
+    width: 50px;
 
     border: 2px solid #fff;
     border-radius: 10px;
@@ -46,7 +46,7 @@
 }
 
 .navigation{
-    display: flex;
+    display: none;
     gap: 20px;
     padding: 20px;
 }
@@ -63,7 +63,7 @@
     text-decoration: none;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 15px;
 
     background-color: rgb(255, 16, 16);
     border: solid 2px #fff;
@@ -76,7 +76,7 @@
 .main-section{
     background-color: rgb(0, 229, 255);
     
-    height: auto;
+    height: 100%;
     width: 100%;
 
     display: flex;
@@ -101,6 +101,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+label{
+    display: none;
 }
 
 .search-box > fieldset{
@@ -137,7 +141,7 @@
 
 .slide-section{
     width: 100%;
-    height: auto;
+    height: 100%;
     
     display: flex;
     flex-direction: column;
@@ -150,10 +154,12 @@
     padding: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    text-align: center;
+    font-size: 15px;
 }
 
 .slide-box{
-    width: auto;
+    width: 100%;
     border-radius: 10px;
     padding: 10px;
     display: flex;
@@ -165,36 +171,36 @@
 #left-arrow{
     background-color: transparent;
     border: none;
-    font-size: 20px;
+    font-size: 15px;
     cursor: pointer;
     border: 1px solid black;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 #right-arrow{
     background-color: transparent;
     border: none;
-    font-size: 20px;
+    font-size: 15px;
     cursor: pointer;
     border: 1px solid black;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 10px;
 }
 
 .slide-imgs{
-    width: 330px; /*cada imagem deve ter 300px*/
+    width: 310px; /*cada imagem deve ter 300px*/
     max-width: 100%;
     padding: 10px;
     overflow-x: hidden;
     display: flex;
-    gap: 10px;
 }
 
 .slide-element{
     border-radius: 20px;
     border: 1px solid black;
-    width: 100px;
+    width: 300px;
 
     cursor:grabbing;
 }

@@ -44,6 +44,17 @@
     padding: 5px;
 }
 
+.navigation-button{
+    display: none;
+    font-size: 30px;
+    height: auto;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    justify-content: center;
+    align-items: center;
+}
+
 .navigation{
     display: flex;
     gap: 20px;
@@ -75,7 +86,8 @@
 .main-section{
     background-color: rgb(0, 229, 255);
     
-    height: fit-content;
+    height: auto;
+    width: 100%;
 
     display: flex;
     flex-direction: column;
@@ -130,6 +142,7 @@
 
     font-size: 20px;
     color: #fff;
+    cursor: pointer;
 }
 
 .slide-section{
@@ -144,15 +157,13 @@
 
 .slide-title{
     font-family: "roboto";
-    background-color: #fff;
     padding: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
 .slide-box{
-    width: 1100px; /*cada imagem deve ter 300px*/
-    background-color: #ffffff;
+    width: auto; /*cada imagem deve ter 300px*/
     border-radius: 10px;
     padding: 10px;
     display: flex;
@@ -167,6 +178,8 @@
     font-size: 30px;
     cursor: pointer;
     border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 #right-arrow{
@@ -175,6 +188,8 @@
     font-size: 30px;
     cursor: pointer;
     border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .slide-imgs{
@@ -210,6 +225,46 @@
     backdrop-filter: opacity(20%);
     backdrop-filter: blur(10px);
     border-radius: 20px;
+    font-display: flex;
+    display: flex;
+}
+
+.library-menu{
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: black;
+    width: 200px;
+    height: inherit;
+}
+
+.menu-logo{
+    margin-top: 20px;
+}
+
+.menu-title{
+    color: #fff;
+    text-align: center;
+    width: 200px;
+    font-family: 'Lucida Sans';
+
+}
+
+.library-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.library-elements{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-content: center;
 }
 
 /*-----------------------------------------------------footer section-----------------------------------------*/
