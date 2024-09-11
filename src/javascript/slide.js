@@ -6,34 +6,69 @@ console.log(slideImg.length);
 
 let slideIndex = 0;
 
-rightBtn.addEventListener("click", () => {
-  slideIndex++;
 
-  if (slideIndex >= slideImg.length - 2) {
-    slideIndex = 0;
-  }
+if(window.innerWidth <= 400){
+  rightBtn.addEventListener("click", () => {
+    slideIndex++;
 
-  const slideWidth = 311;
-  const offset = slideIndex * slideWidth;
+    if (slideIndex >= slideImg.length) {
+      slideIndex = 0;
+    }
 
-  slideImg.forEach((img) => {
-    img.style.transform = `translateX(-${offset}px)`;
-    img.style.transition = `all 1s`;
+    const slideWidth = 250;
+    const offset = slideIndex * slideWidth;
+
+    slideImg.forEach((img) => {
+      img.style.transform = `translateX(-${offset}px)`;
+      img.style.transition = `all 1s`;
+    });
   });
-});
 
-leftBtn.addEventListener("click", () => {
-  slideIndex--;
+    leftBtn.addEventListener("click", () => {
+      slideIndex--;
 
-  if (slideIndex == 0) {
-    slideIndex = 0;
-  }
+      if (slideIndex == 0) {
+        slideIndex = 0;
+      }
 
-  const slideWidth = 311;
-  const offset = slideIndex * slideWidth;
+      const slideWidth = 250;
+      const offset = slideIndex * slideWidth;
 
-  slideImg.forEach((img) => {
-    img.style.transform = `translateX(-${offset}px)`;
-    img.style.transition = `all 1s`;
+      slideImg.forEach((img) => {
+        img.style.transform = `translateX(-${offset}px)`;
+        img.style.transition = `all 1s`;
+      });
+    });
+}else{
+  rightBtn.addEventListener("click", () => {
+    slideIndex++;
+
+    if (slideIndex >= slideImg.length - 2) {
+      slideIndex = 0;
+    }
+
+    const slideWidth = 311;
+    const offset = slideIndex * slideWidth;
+
+    slideImg.forEach((img) => {
+      img.style.transform = `translateX(-${offset}px)`;
+      img.style.transition = `all 1s`;
+    });
   });
-});
+
+  leftBtn.addEventListener("click", () => {
+    slideIndex--;
+
+    if (slideIndex == 0) {
+      slideIndex = 0;
+    }
+
+    const slideWidth = 311;
+    const offset = slideIndex * slideWidth;
+
+    slideImg.forEach((img) => {
+      img.style.transform = `translateX(-${offset}px)`;
+      img.style.transition = `all 1s`;
+    });
+  });
+}
