@@ -191,7 +191,7 @@ label{
 
 .slide-imgs{
     width: 310px; /*cada imagem deve ter 300px*/
-    max-width: 310px;
+    max-width: 310px !important;
     padding: 10px;
     overflow-x: hidden;
     display: flex;
