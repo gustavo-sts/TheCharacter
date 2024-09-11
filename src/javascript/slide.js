@@ -15,7 +15,7 @@ if(window.innerWidth <= 400){
       slideIndex = 0;
     }
 
-    const slideWidth = 250;
+    const slideWidth = 210;
     const offset = slideIndex * slideWidth;
 
     slideImg.forEach((img) => {
@@ -31,7 +31,7 @@ if(window.innerWidth <= 400){
         slideIndex = 0;
       }
 
-      const slideWidth = 250;
+      const slideWidth = 210;
       const offset = slideIndex * slideWidth;
 
       slideImg.forEach((img) => {
