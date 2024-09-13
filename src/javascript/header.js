@@ -7,6 +7,7 @@ window.addEventListener('scroll', ()=>{
     
     if(scrollPosition >= maxDistance){
         header.style.position = 'fixed';
+        header.style.transition = `all 0.5s`
         header.style.zIndex = 1
     }else{
         header.style.position = "relative";
