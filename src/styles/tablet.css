@@ -71,7 +71,7 @@
     align-items: center;
 }
 
-.navigation > li > a{
+.link{
     text-decoration: none;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -214,7 +214,7 @@ label{
     border: 1px solid black;
     width: 300px;
 
-    cursor:grabbing;
+    cursor: pointer;
 }
 
 .library-section{
@@ -228,7 +228,7 @@ label{
 
 .library-box{
     width: 94%;
-    height: 700px;
+    height: auto;
     background-color: rgba(0, 0, 0, 0.282);
     backdrop-filter: opacity(20%);
     backdrop-filter: blur(10px);

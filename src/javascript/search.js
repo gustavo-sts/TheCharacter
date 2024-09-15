@@ -7,7 +7,8 @@ const items = document.querySelectorAll(".library-element");
 searchButton.addEventListener("click", () => {
   if (searchInput != "") {
     items.forEach((el) => {
-      const title = el.innerText;
+      const titleBox = el.querySelector('div');
+      const title = titleBox.querySelector('h2').innerText
       if (
         title
           .toLowerCase()
