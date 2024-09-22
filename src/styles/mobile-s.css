@@ -11,7 +11,7 @@
         width: 200px;
     }
     .library-menu{
-        width: 50px;
+        display: none;
         font-size: 10px;
     }
     .library-menu h2{
@@ -32,6 +32,9 @@
     }
     .library-element article{
         width: 150px;
-        font-size: 10px;
+        font-size: 12px;
+    }
+    .library-element article h2{
+        color: #000000;
     }
 }
