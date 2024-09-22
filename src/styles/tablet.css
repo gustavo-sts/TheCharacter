@@ -1,294 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@media screen and (max-width: 925px){
+    .navigation{
+        display: none;
+    }
 
-@media (max-width: 1100px){
-    *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+    .navigation-button{
+        display: block;
+        margin-right: 20px
+    }
 
-/*----------------------------------------------------Header section--------------------------------------------*/
+    #close-btn{
+        display: block;
+        padding: 0;
+        background-color: transparent;
+        font-size: 20px;
+        border: none
+    }
 
-.header-section{
-    width: 100%;
-    height: 100px;
-    background-color: #000000;
+    .slide-imgs{
+        width: 640px;
+    }
+    .slide-element{
+        width: 200px;
+    }
+    .library-side{
+        width: 100%;
+        height: 100%;
+    }
+    .library-elements{
+        width: auto;
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        height: 100%;
+    }
+    .library-element > div > img{
+        width: 150px;
+    }
 
-    display: flex;
-    justify-content: space-between;
-}
-
-.logo-box{
-    padding: 20px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.logo-box > h1{
-    font-size: 15px;
-    font-family: "Roboto";
-    color: #fff;
-
-    border: 2px solid #fff;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-.logo-box > img{
-    width: 50px;
-
-    border: 2px solid #fff;
-    border-radius: 10px;
-    padding: 5px;
-}
-
-.navigation-button{
-    display: flex;
-    font-size: 30px;
-    height: auto;
-    background-color: transparent;
-    color: #fff;
-    border: none;
-    justify-content: center;
-    align-items: center;
-    margin-right: 20px;
-}
-
-.navigation{
-    display: none;
-    gap: 20px;
-    padding: 20px;
-}
-
-.navigation > li{
-    list-style: none;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.link{
-    text-decoration: none;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-
-    background-color: rgb(255, 16, 16);
-    border: solid 2px #fff;
-    border-radius: 12px;
-    padding: 10px;
-}
-
-/*-----------------------------------------------------main section--------------------------------------------*/
-
-.main-section{
-    background-color: rgb(0, 229, 255);
-    
-    height: 100%;
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-}
-
-.search-section{
-    color: white;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.search-box{
-    margin: 20px 0px;
-    width: 94%;
-    height: 100px;
-    background: rgba(5, 0, 102, 0.5);
-    background: linear-gradient(126deg, rgb(5, 0, 102) 0%, rgba(0,31,48,1) 100%);
-    border-radius: 20px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-label{
-    display: none;
-}
-
-.search-box > fieldset{
-    height: fit-content;
-    border-radius: 20px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 10px;
-}
-
-#search-input{
-    border-radius: 5px;
-    text-indent: 5px;
-    width: 200px;
-    height: 30px;
-}
-
-#search-input::placeholder{
-    color: black;
-    font-size: 15px;
-}
-
-#search-submit{
-    background-color: transparent;
-    border: none;
-
-    font-size: 20px;
-    color: #fff;
-    cursor: pointer;
-}
-
-.slide-section{
-    width: 100%;
-    height: 100%;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.slide-title{
-    font-family: "roboto";
-    padding: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    text-align: center;
-    font-size: 15px;
-}
-
-.slide-box{
-    width: 100%;
-    border-radius: 10px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-#left-arrow{
-    background-color: transparent;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    border: 1px solid black;
-    padding: 5px;
-    border-radius: 5px;
-}
-
-#right-arrow{
-    background-color: transparent;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    border: 1px solid black;
-    padding: 5px;
-    border-radius: 5px;
-    margin-left: 10px;
-}
-
-.slide-imgs{
-    width: 620px; /*cada imagem deve ter 300px*/
-    max-width: 100%;
-    padding: 10px;
-    overflow-x: hidden;
-    display: flex;
-}
-
-.slide-element{
-    border-radius: 20px;
-    border: 1px solid black;
-    width: 300px;
-
-    cursor: pointer;
-}
-
-.library-section{
-    margin: 20px 0px;
-    height: fit-content;
-    width: 100%;
-    
-    display: flex;
-    justify-content: center;
-}
-
-.library-box{
-    width: 94%;
-    height: auto;
-    background-color: rgba(0, 0, 0, 0.282);
-    backdrop-filter: opacity(20%);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    font-display: flex;
-    display: flex;
-}
-
-.library-menu{
-    display: flex;
-    flex-direction: column;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    background-color: black;
-    width: 200px;
-    height: inherit;
-}
-
-.menu-logo{
-    margin-top: 20px;
-}
-
-.menu-title{
-    color: #fff;
-    text-align: center;
-    width: 200px;
-    font-family: 'Lucida Sans';
-
-}
-
-.library-side{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-.library-elements{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-    justify-items: center;
-    align-content: center;
-}
-
-/*-----------------------------------------------------footer section-----------------------------------------*/
-
-.footer-section{
-    width: 100%;
-    height: 100px;
-    background-color: #000;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-section > div > span{
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-}
+    .search-box > fieldset > label{
+        display: none;
+    }
 }

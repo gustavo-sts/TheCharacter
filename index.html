@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The caracther | Books</title>
+    <title>The character | Books</title>
 
     <link rel="stylesheet" href="./src/styles/desktop.css">
+    <link rel="stylesheet" href="./src/styles/laptop-l.css">
+    <link rel="stylesheet" href="./src/styles/tablet.css">
     <link rel="stylesheet" href="./src/styles/mobile.css">
     <link rel="stylesheet" href="./src/styles/mobile-s.css">
-    <link rel="stylesheet" href="./src/styles/tablet.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <header class="header-section">
         <div class="logo-box">
             <img src="./src/images/Logo.jpg" alt="">
-            <h1>The caracther | Livros originais.</h1>
+            <h1 class="logo-title">The character | Livros originais.</h1>
         </div>
 
         <button type="button" class="navigation-button"><i class="fa-bars fa-solid"></i></button>
@@ -31,8 +33,9 @@
                 <a href="#" class="link">Dúvidas</a>
             </li> <!--Editar link-->
             <li>
-                <a href="#" class="link">Redes sociais</a>
+                <a href=".\src\pages\social.html" class="link">Redes sociais</a>
             </li> <!--Editar link-->
+            <button type="button" id="close-btn"><i class="fa-solid fa-window-close"></i></button>
         </nav>
     </header>
 
@@ -52,15 +55,21 @@
             <div class="slide-box">
                 <button id="left-arrow"><i class="fa-solid fa-arrow-left"></i></button>
                 <div class="slide-imgs">
-                    <img src="https://media.slidesgo.com/storage/11258370/upload.png" alt="" class="slide-element">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0sbcINpv4FVmG2M2dZeKpeghxidNswXeDTQ&s" alt=""
-                    class="slide-element">
-                    <img src="https://media.slidesgo.com/storage/11258370/upload.png" alt="" class="slide-element">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0sbcINpv4FVmG2M2dZeKpeghxidNswXeDTQ&s" alt=""
-                    class="slide-element">
-                    <img src="https://media.slidesgo.com/storage/11258370/upload.png" alt="" class="slide-element">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0sbcINpv4FVmG2M2dZeKpeghxidNswXeDTQ&s" alt=""
-                    class="slide-element">
+                    <a href=""><img src="https://media.slidesgo.com/storage/11258370/upload.png" alt="" class="slide-element"></a>
+                    <a href="">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0sbcINpv4FVmG2M2dZeKpeghxidNswXeDTQ&s" alt=""
+                        class="slide-element">
+                    </a>
+                    <a href=""><img src="https://media.slidesgo.com/storage/11258370/upload.png" alt="" class="slide-element"></a>
+                    <a href="">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0sbcINpv4FVmG2M2dZeKpeghxidNswXeDTQ&s" alt=""
+                        class="slide-element">
+                    </a>
+                    <a href=""><img src="https://media.slidesgo.com/storage/11258370/upload.png" alt="" class="slide-element"></a>
+                    <a href="">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0sbcINpv4FVmG2M2dZeKpeghxidNswXeDTQ&s" alt=""
+                        class="slide-element">
+                    </a>
                 </div>
                 <button id="right-arrow"><i class="fa-solid fa-arrow-right"></i></button>
             </div>
@@ -77,38 +86,70 @@
 
                 <div class="library-side">
                     <div class="library-elements">
-                        <div class="library-element">
-                            <h2>Título!</h2>
-                            <div></div>
-                        </div>
-                        <div class="library-element">
-                            <h2>Título!</h2>
-                            <div></div>
-                        </div>
-                        <div class="library-element">
-                            <h2>Título!</h2>
-                            <div></div>
-                        </div>
-                        <div class="library-element">
-                            <h2>Título!</h2>
-                            <div></div>
-                        </div>
-                        <div class="library-element">
-                            <h2>Título!</h2>
-                            <div></div>
-                        </div>
-                        <div class="library-element">
-                            <h2>Título!</h2>
-                            <div></div>
-                        </div>
-                        <div class="library-element">
-                            <h2>Título!</h2>
-                            <div></div>
-                        </div>
-                        <div class="library-element">
-                            <h2>Título!</h2>
-                            <div></div>
-                        </div>
+                        <a href="#" class="library-element">
+                            <article>
+                                <h2>Entendendo o Tdah!</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident asperiores repellendus saepe numquam consequatur suscipit tenetur rerum aperiam soluta ducimus corporis iure fugiat quod nulla, id aspernatur totam quam eos?</p>
+                            </article>
+                            <div>
+                                <img src="https://marketplace.canva.com/EAE4oJOnMh0/1/0/1003w/canva-capa-de-livro-de-suspense-O7z4yw4a5k8.jpg" alt="img">
+                            </div>
+                        </a>
+                        
+                        <a href="#" class="library-element">
+                            <article>
+                                <h2>Entendendo o Tdah!</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident asperiores repellendus saepe numquam consequatur suscipit tenetur rerum aperiam soluta ducimus corporis iure fugiat quod nulla, id aspernatur totam quam eos?</p>
+                            </article>
+                            <div>
+                                <img src="https://marketplace.canva.com/EAE4oJOnMh0/1/0/1003w/canva-capa-de-livro-de-suspense-O7z4yw4a5k8.jpg"
+                                    alt="img">
+                            </div>
+                        </a>
+
+                        <a href="#" class="library-element">
+                            <article>
+                                <h2>Entendendo o Tdah!</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident asperiores repellendus saepe numquam consequatur suscipit tenetur rerum aperiam soluta ducimus corporis iure fugiat quod nulla, id aspernatur totam quam eos?</p>
+                            </article>
+                            <div>
+                                <img src="https://marketplace.canva.com/EAE4oJOnMh0/1/0/1003w/canva-capa-de-livro-de-suspense-O7z4yw4a5k8.jpg"
+                                    alt="img">
+                            </div>
+                        </a>
+
+                        <a href="#" class="library-element">
+                            <article>
+                                <h2>Entendendo o Tdah!</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident asperiores repellendus saepe numquam consequatur suscipit tenetur rerum aperiam soluta ducimus corporis iure fugiat quod nulla, id aspernatur totam quam eos?</p>
+                            </article>
+                            <div>
+                                <img src="https://marketplace.canva.com/EAE4oJOnMh0/1/0/1003w/canva-capa-de-livro-de-suspense-O7z4yw4a5k8.jpg"
+                                    alt="img">
+                            </div>
+                        </a>
+
+                        <a href="#" class="library-element">
+                            <article>
+                                <h2>Entendendo o Tdah!</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident asperiores repellendus saepe numquam consequatur suscipit tenetur rerum aperiam soluta ducimus corporis iure fugiat quod nulla, id aspernatur totam quam eos?</p>
+                            </article>
+                            <div>
+                                <img src="https://marketplace.canva.com/EAE4oJOnMh0/1/0/1003w/canva-capa-de-livro-de-suspense-O7z4yw4a5k8.jpg"
+                                    alt="img">
+                            </div>
+                        </a>
+
+                        <a href="#" class="library-element">
+                            <article>
+                                <h2>Entendendo o Tdah!</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident asperiores repellendus saepe numquam consequatur suscipit tenetur rerum aperiam soluta ducimus corporis iure fugiat quod nulla, id aspernatur totam quam eos?</p>
+                            </article>
+                            <div>
+                                <img src="https://marketplace.canva.com/EAE4oJOnMh0/1/0/1003w/canva-capa-de-livro-de-suspense-O7z4yw4a5k8.jpg"
+                                    alt="img">
+                            </div>
+                        </a>
                     </div>
                 </div>
                 

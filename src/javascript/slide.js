@@ -6,8 +6,8 @@ console.log(slideImg.length);
 
 let slideIndex = 0;
 
-
-if(window.innerWidth <= 500){
+//-----------------------------------------------Mobile-s
+if(window.innerWidth <= 400){
   rightBtn.addEventListener("click", () => {
     slideIndex++;
 
@@ -39,15 +39,18 @@ if(window.innerWidth <= 500){
         img.style.transition = `all 1s`;
       });
     });
-}else if (window.innerWidth <= 800) {
+}
+
+//---------------------------------------------------Mobile
+else if (window.innerWidth <= 1025) {
   rightBtn.addEventListener("click", () => {
     slideIndex++;
 
-    if (slideIndex >= slideImg.length) {
+    if (slideIndex >= slideImg.length -1) {
       slideIndex = 0;
     }
 
-    const slideWidth = 311;
+    const slideWidth = 210;
     const offset = slideIndex * slideWidth;
 
     slideImg.forEach((img) => {
@@ -63,7 +66,7 @@ if(window.innerWidth <= 500){
       slideIndex = 0;
     }
 
-    const slideWidth = 311;
+    const slideWidth = 250;
     const offset = slideIndex * slideWidth;
 
     slideImg.forEach((img) => {
@@ -71,7 +74,10 @@ if(window.innerWidth <= 500){
       img.style.transition = `all 1s`;
     });
   });
-}else{
+}
+
+//-------------------------------------------------Desktop
+else{
     rightBtn.addEventListener("click", () => {
       slideIndex++;
 

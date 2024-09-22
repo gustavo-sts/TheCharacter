@@ -7,14 +7,13 @@ const items = document.querySelectorAll(".library-element");
 searchButton.addEventListener("click", () => {
   if (searchInput != "") {
     items.forEach((el) => {
-      const titleBox = el.querySelector('div');
-      const title = titleBox.querySelector('h2').innerText
+      const title = el.querySelector('h2').innerText;
       if (
         title
           .toLowerCase()
           .includes(searchInput.value.toLowerCase())
       ) {
-        el.style = "display: block";
+        el.style = "display: flex";
       } else {
         el.style = "display: none";
       }
