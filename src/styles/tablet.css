@@ -1,8 +1,11 @@
 @media screen and (max-width: 925px){
     .navigation{
         display: none;
+        width: 0;
+        max-width: 0%;
+        overflow-x: hidden;
+        transition: width 0.5s;
     }
-
     .navigation-button{
         display: block;
         margin-right: 20px

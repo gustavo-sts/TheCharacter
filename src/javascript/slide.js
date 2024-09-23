@@ -7,7 +7,7 @@ console.log(slideImg.length);
 let slideIndex = 0;
 
 //-----------------------------------------------Mobile-s
-if(window.innerWidth <= 400){
+if(window.innerWidth <= 500){
   rightBtn.addEventListener("click", () => {
     slideIndex++;
 
