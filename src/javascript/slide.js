@@ -7,46 +7,11 @@ console.log(slideImg.length);
 let slideIndex = 0;
 
 //-----------------------------------------------Mobile-s
-if(window.innerWidth <= 500){
+if (window.innerWidth <= 500) {
   rightBtn.addEventListener("click", () => {
     slideIndex++;
 
     if (slideIndex >= slideImg.length) {
-      slideIndex = 0;
-    }
-
-    const slideWidth = 210;
-    const offset = slideIndex * slideWidth;
-
-    slideImg.forEach((img) => {
-      img.style.transform = `translateX(-${offset}px)`;
-      img.style.transition = `all 1s`;
-    });
-  });
-
-    leftBtn.addEventListener("click", () => {
-      slideIndex--;
-
-      if (slideIndex == 0) {
-        slideIndex = 0;
-      }
-
-      const slideWidth = 210;
-      const offset = slideIndex * slideWidth;
-
-      slideImg.forEach((img) => {
-        img.style.transform = `translateX(-${offset}px)`;
-        img.style.transition = `all 1s`;
-      });
-    });
-}
-
-//---------------------------------------------------Mobile
-else if (window.innerWidth <= 1025) {
-  rightBtn.addEventListener("click", () => {
-    slideIndex++;
-
-    if (slideIndex >= slideImg.length -1) {
       slideIndex = 0;
     }
 
@@ -66,7 +31,112 @@ else if (window.innerWidth <= 1025) {
       slideIndex = 0;
     }
 
-    const slideWidth = 250;
+    const slideWidth = 210;
+    const offset = slideIndex * slideWidth;
+
+    slideImg.forEach((img) => {
+      img.style.transform = `translateX(-${offset}px)`;
+      img.style.transition = `all 1s`;
+    });
+  });
+}
+
+//---------------------------------------------------Mobile
+else if (window.innerWidth <= 800) {
+  rightBtn.addEventListener("click", () => {
+    slideIndex++;
+
+    if (slideIndex >= slideImg.length - 1) {
+      slideIndex = 0;
+    }
+
+    const slideWidth = 210;
+    const offset = slideIndex * slideWidth;
+
+    slideImg.forEach((img) => {
+      img.style.transform = `translateX(-${offset}px)`;
+      img.style.transition = `all 1s`;
+    });
+  });
+
+  leftBtn.addEventListener("click", () => {
+    slideIndex--;
+
+    if (slideIndex == 0) {
+      slideIndex = 0;
+    }
+
+    const slideWidth = 210;
+    const offset = slideIndex * slideWidth;
+
+    slideImg.forEach((img) => {
+      img.style.transform = `translateX(-${offset}px)`;
+      img.style.transition = `all 1s`;
+    });
+  });
+}
+
+//---------------------------------------------------Tablet
+else if (window.innerWidth <= 925) {
+  rightBtn.addEventListener("click", () => {
+    slideIndex++;
+
+    if (slideIndex >= slideImg.length - 2) {
+      slideIndex = 0;
+    }
+
+    const slideWidth = 210;
+    const offset = slideIndex * slideWidth;
+
+    slideImg.forEach((img) => {
+      img.style.transform = `translateX(-${offset}px)`;
+      img.style.transition = `all 1s`;
+    });
+  });
+
+  leftBtn.addEventListener("click", () => {
+    slideIndex--;
+
+    if (slideIndex == 0) {
+      slideIndex = 0;
+    }
+
+    const slideWidth = 210;
+    const offset = slideIndex * slideWidth;
+
+    slideImg.forEach((img) => {
+      img.style.transform = `translateX(-${offset}px)`;
+      img.style.transition = `all 1s`;
+    });
+  });
+}
+
+//---------------------------------------------------Laptop-L
+else if (window.innerWidth <= 1125) {
+  rightBtn.addEventListener("click", () => {
+    slideIndex++;
+
+    if (slideIndex >= slideImg.length - 2) {
+      slideIndex = 0;
+    }
+
+    const slideWidth = 260;
+    const offset = slideIndex * slideWidth;
+
+    slideImg.forEach((img) => {
+      img.style.transform = `translateX(-${offset}px)`;
+      img.style.transition = `all 1s`;
+    });
+  });
+
+  leftBtn.addEventListener("click", () => {
+    slideIndex--;
+
+    if (slideIndex == 0) {
+      slideIndex = 0;
+    }
+
+    const slideWidth = 260;
     const offset = slideIndex * slideWidth;
 
     slideImg.forEach((img) => {
@@ -77,36 +147,36 @@ else if (window.innerWidth <= 1025) {
 }
 
 //-------------------------------------------------Desktop
-else{
-    rightBtn.addEventListener("click", () => {
-      slideIndex++;
+else {
+  rightBtn.addEventListener("click", () => {
+    slideIndex++;
 
-      if (slideIndex >= slideImg.length - 2) {
-        slideIndex = 0;
-      }
+    if (slideIndex >= slideImg.length - 2) {
+      slideIndex = 0;
+    }
 
-      const slideWidth = 311;
-      const offset = slideIndex * slideWidth;
+    const slideWidth = 311;
+    const offset = slideIndex * slideWidth;
 
-      slideImg.forEach((img) => {
-        img.style.transform = `translateX(-${offset}px)`;
-        img.style.transition = `all 1s`;
-      });
+    slideImg.forEach((img) => {
+      img.style.transform = `translateX(-${offset}px)`;
+      img.style.transition = `all 1s`;
     });
+  });
 
-    leftBtn.addEventListener("click", () => {
-      slideIndex--;
+  leftBtn.addEventListener("click", () => {
+    slideIndex--;
 
-      if (slideIndex == 0) {
-        slideIndex = 0;
-      }
+    if (slideIndex == 0) {
+      slideIndex = 0;
+    }
 
-      const slideWidth = 311;
-      const offset = slideIndex * slideWidth;
+    const slideWidth = 311;
+    const offset = slideIndex * slideWidth;
 
-      slideImg.forEach((img) => {
-        img.style.transform = `translateX(-${offset}px)`;
-        img.style.transition = `all 1s`;
-      });
+    slideImg.forEach((img) => {
+      img.style.transform = `translateX(-${offset}px)`;
+      img.style.transition = `all 1s`;
     });
+  });
 }

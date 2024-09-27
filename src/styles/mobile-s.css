@@ -7,6 +7,12 @@
     .slide-title{
         text-align: center;
     }
+    .left-arrow{
+        font-size: 10px;
+    }
+    .right-arrow{
+        font-size: 10px;
+    }
     .slide-imgs{
         width: 210px;
     }

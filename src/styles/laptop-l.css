@@ -12,4 +12,8 @@
     .slide-element{
         width: 250px;
     }
+
+    .library-menu{
+        display: none;
+    }
 }
