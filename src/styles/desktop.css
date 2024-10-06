@@ -284,6 +284,27 @@ fieldset > label{
 
 }
 
+.library-menu nav{
+    margin-top: 20px;
+}
+
+.library-menu ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.library-menu-items{
+    list-style: none;
+}
+
+.library-menu-items a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: "roboto"
+}
+
 .library-side{
     display: flex;
     flex-direction: column;

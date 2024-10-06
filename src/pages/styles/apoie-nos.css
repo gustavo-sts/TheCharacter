@@ -45,7 +45,7 @@ main{
     border-radius: 20px;
 }
 
-.instagram{
+.picpay{
     margin-top: 20px;
     display: flex;
     justify-content: center;
@@ -53,12 +53,12 @@ main{
     gap: 20px;
 }
 
-.instagram img{
+.picpay img{
     width: 100px;
     height: 100px;
 }
 
-.instagram a{
+.picpay a{
     display: flex;
     flex-direction: column;
     gap: 20px;
