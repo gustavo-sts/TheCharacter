@@ -272,11 +272,11 @@ fieldset > label{
     height: inherit;
 }
 
-.menu-logo{
+.library-menu-logo{
     margin-top: 20px;
 }
 
-.menu-title{
+.library-menu-title{
     color: #fff;
     text-align: center;
     width: 200px;
@@ -286,12 +286,14 @@ fieldset > label{
 
 .library-menu nav{
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .library-menu ul{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
 }
 
 .library-menu-items{
@@ -310,6 +312,7 @@ fieldset > label{
     flex-direction: column;
     width: 100%;
     padding-bottom: 20px;
+    min-height: 700px;
 }
 
 .library-elements{
@@ -329,6 +332,10 @@ fieldset > label{
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: none;
+}
+
+.library-element h2{
+    color: #000;
 }
 
 .library-element > article{
