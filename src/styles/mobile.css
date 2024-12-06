@@ -48,4 +48,7 @@
     .menu-title{
         width: 100px;
     }
+    .search-box > fieldset{
+        border: none;
+    }
 }
